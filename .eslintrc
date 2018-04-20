@@ -1,0 +1,32 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "standard-jsx",
+    "plugin:react/all",
+    "plugin:promise/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react/jsx-max-props-per-line": ["error", { "when": "multiline" }],
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-no-literals": 0,
+    "react/jsx-closing-bracket-location": ["error", "line-aligned"],
+    "react/jsx-wrap-multilines": ["error", {
+      "declaration": "parens-new-line",
+      "assignment": "parens-new-line",
+      "return": "parens-new-line",
+      "arrow": "parens-new-line",
+      "condition": "parens-new-line",
+      "logical": "parens-new-line"
+    }],
+    "react/no-set-state": 0,
+    "react/forbid-component-props": 0,
+    "react/prefer-stateless-function": 0,
+    "react/sort-prop-types": 0,
+    "react/forbid-prop-types": ["error", { "checkContextTypes": true }],
+    "object-curly-spacing": ["error", "always"],
+    "newline-after-var": ["error", "always"],
+    "jsx-quotes": ["error", "prefer-double"]
+  }
+}
